@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  /* overflow: hidden; */
+}
+.box-topic {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.App {
+  text-align: center;
+  height: 150vh;
+  font-size: 20px;
+  font-weight: 100;
+  word-spacing: 1px;
+  line-height: 1.45em;
+  /* font-family: "Ubuntu", "Sharp Sans No1", Sans-serif; */
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(32, 32, 31, 0),
+      rgba(11, 17, 20, 0)
+    ),
+    url(./components/img/aii.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.main-page {
+  padding-top: 80px;
+}
+
+.home-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: #0e362e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(94, 76, 76, 0.5);
+  backdrop-filter: blur(20px);
+}
+/* Navbar Styles */
+.home-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display items horizontally */
+}
+
+.home-nav li {
+  margin-right: 20px;
+}
+
+.home-nav a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.home-nav a:hover {
+  color: #8d8b83;
+}
+
+.sign-up {
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.signup-form {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  border-radius: 40px;
+  background-color: rgba(94, 76, 76, 0.5);
+  backdrop-filter: blur(20px);
+}
+.input-box {
+  position: relative;
+}
+
+.buttonns {
+  padding-bottom: 5px;
+}
+.input-submit {
+  width: 80%;
+  font-size: 18px;
+  height: 55px;
+  padding: 0 15px;
+  margin: 10px 0;
+  color: var(--text);
+  background-color: rgb(17, 8, 139);
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+.input-submit:active {
+  background-color: #0056b3; /* Change background color when button is active (clicked) */
+}
+.input-submit:hover {
+  gap: 0px;
+}
+.input-field {
+  width: 80%;
+  font-size: 18px;
+  height: 55px;
+  padding: 0 15px;
+  margin: 10px 0;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+::placeholder {
+  color: var(--text);
+  font-size: 18px;
+}
+.signin-onUp {
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 2%;
+  line-height: 1.5em;
+  width: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  border-radius: 40px;
+  background-color: rgba(94, 76, 76, 0.5);
+  backdrop-filter: blur(20px);
+}
+.home-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 8%;
+  line-height: 1.5em;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  border-radius: 40px;
+  background-color: rgba(94, 76, 76, 0.5);
+  backdrop-filter: blur(20px);
+}
+
+.user-account {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  border-radius: 40px;
+  background-color: rgba(94, 76, 76, 0.5);
+  backdrop-filter: blur(20px);
+}
+
+.user-card {
+  margin-top: 30px;
+}
+.sign-link {
+  color: rgb(210, 209, 228); /* Change the text color */
+  text-decoration: none; /* Remove the default underline */
+  font-weight: 600; /* Make the text bold */
+  /* Add any additional styles you want */
+}
+
+.sign-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+.image-card {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  margin-left: auto;
+  margin-right: auto;
+}
